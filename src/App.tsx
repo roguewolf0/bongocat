@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { ArrowUp } from 'lucide-react';
 import { BONGO_COLLECTION } from './data/collection';
 import type { MintFilter, NftItem } from './types/nft';
@@ -112,6 +113,7 @@ export default function App() {
           }
         }}
       />
+      <Analytics />
     </div>
   );
 }
