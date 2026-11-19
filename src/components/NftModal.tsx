@@ -143,17 +143,6 @@ export function NftModal({
                 </div>
               )}
             </div>
-
-            <div className="text-xs text-zinc-600 leading-relaxed pt-1">
-              <span className="font-semibold text-zinc-900">Traits: </span>
-              <span>{item.traits.coat}</span>
-              <span aria-hidden="true"> · </span>
-              <span>{item.traits.eyewear}</span>
-              <span aria-hidden="true"> · </span>
-              <span>{item.traits.headwear === 'None' ? 'Bare Ears' : item.traits.headwear}</span>
-              <span aria-hidden="true"> · </span>
-              <span>{item.traits.outfit}</span>
-            </div>
           </div>
 
           {/* Details & One-Click Commands Column */}
