@@ -1,0 +1,6 @@
+{
+  "name": "BongoCat · BCAT",
+  "description": "A playful 100-piece 1-of-1 pop-art NFT collection on Quilibrium.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
