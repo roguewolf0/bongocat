@@ -173,19 +173,15 @@ export function NftModal({
                 <dt className="text-xs font-medium text-zinc-500">Domain</dt>
                 <dd className="mt-0.5 flex items-center gap-1.5">
                   <span className="font-mono text-sm font-semibold text-zinc-900 truncate">
-                    {item.domain}
+                    {'*'.repeat(18)}
                   </span>
                   <button
                     type="button"
-                    onClick={() => handleCopy('domain', item.domain)}
-                    aria-label={`Copy domain ${item.domain}`}
-                    className="p-1 text-zinc-500 hover:text-zinc-900 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#38BDF8]"
+                    disabled
+                    aria-label="Domain hidden"
+                    className="p-1 text-zinc-400 rounded opacity-45 pointer-events-none"
                   >
-                    {copiedKey === 'domain' ? (
-                      <Check className="w-3.5 h-3.5 text-emerald-600" aria-hidden="true" />
-                    ) : (
-                      <Copy className="w-3.5 h-3.5" aria-hidden="true" />
-                    )}
+                    <Copy className="w-3.5 h-3.5" aria-hidden="true" />
                   </button>
                 </dd>
               </div>
